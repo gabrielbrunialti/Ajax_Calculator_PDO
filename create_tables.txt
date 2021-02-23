@@ -1,0 +1,42 @@
+CREATE DATABASE projeto;
+
+#Tabela tboperacao: 
+
+CREATE TABLE tboperacao ( 
+id INTEGER PRIMARY KEY AUTO_INCREMENT, 
+valor1 float ,
+valor2 float,
+idoperacao  INT,
+idresultado  INT
+); 
+ 
+
+#Tabela tbresultao:
+
+CREATE TABLE tbresultao ( 
+id INTEGER PRIMARY KEY AUTO_INCREMENT, 
+resultado float, 
+datahora DATE
+); 
+ 
+
+#Tabela memoriacalc:
+ CREATE TABLE memoriacalc ( 
+id INTEGER PRIMARY KEY AUTO_INCREMENT, 
+result_anterior float
+); 
+
+#Tabela tbdescricaooperacao
+ CREATE TABLE tbdescricaooperacao( 
+ id INTEGER PRIMARY KEY AUTO_INCREMENT, 
+operador varchar(1),	
+ descricao varchar (20)
+); 
+
+insert into tbdescricaooperacao (descricao, operador ) values('soma', '+');
+ 
+insert into tbdescricaooperacao (descricao, operador ) values('sub', '-');
+ 
+insert into tbdescricaooperacao (descricao, operador ) values('mult', '*');
+ 
+insert into tbdescricaooperacao (descricao, operador ) values('div', '/');
