@@ -1,0 +1,1 @@
+To run this program simply run the script inside create_tables.txt then run the form_pdo.php file
